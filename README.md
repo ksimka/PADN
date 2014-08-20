@@ -35,14 +35,14 @@ Class describes a type of corresponding value.
 
 Classes for internal types and pseudo-types:
 
-+ array: []
-+ integer, integer-string: int
-+ float, float-string: flt
-+ boolean: bool
-+ string: str
-+ resource: res
-+ null: null
-+ callback: clb
++ array: `[]`
++ integer, integer-string: `int`
++ float, float-string: `flt`
++ boolean: `bool`
++ string: `str`
++ resource: `res`
++ null: `null`
++ callback: `clb`
 
 > Numeric-strings (integer-string, float-string) are equal to int and flt
 > accordingly
