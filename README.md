@@ -49,15 +49,19 @@ Classes for internal types and pseudo-types:
 
 Simple example of PADN and corresponding result:
 
-`[int, int, flt, str, bool, res]`
-`[2, '4', 3.14, "Hello!", false, STDOUT]`
+```
+[int, int, flt, str, bool, res]
+[2, '4', 3.14, "Hello!", false, STDOUT]
+```
 
 FQCN can be used when describing objects. But if this leads to cumbersome notation it's recommended to use short aliases. The main criteria here is understandability and readability for all your team members.
 
 Simple example of array that contains user (actual class Auth_User) and collection of photo albums (\Media\Photo\PhotoAlbum\AlbumCollection):
 
-`[Auth_User, \Media\Photo\PhotoAlbum\AlbumCollection]` (full)
-`[user, album_coll]` (short)
+```
+[Auth_User, \Media\Photo\PhotoAlbum\AlbumCollection] // full
+[user, album_coll] // short
+```
 
 ### Key ###
 
@@ -65,8 +69,10 @@ Key is denoted with string enclosed in single quotes. Key must be exactly the ke
 
 Example of notation and result:
 
-`['country_id', 'country_name']`
-`['country_id' => 42, 'country_name' => 'Oz']`
+```
+['country_id', 'country_name']
+['country_id' => 42, 'country_name' => 'Oz']
+```
 
 Type of value must be written after the key separated with colon.
 
@@ -74,14 +80,17 @@ Type of value must be written after the key separated with colon.
 
 Type should be omitted always when possible.
 
-`// id is often int but can be str, so we leave type here,
- // but name is always string, omit it`
-`['country_id':int, 'country_name']`
+```
+// id is often int but can be str, so we leave type here, but name is always string, omit it
+['country_id':int, 'country_name']
+```
 
 In case you don't use suffixes like 'id' or 'name' or else, you shoul always denote the type. In this example the first notation describes array of ids, the second — array of names.
 
-`['country':int, 'region':int, 'city':int]`
-`['country':str, 'region':str, 'city':str]`
+```
+['country':int, 'region':int, 'city':int]
+['country':str, 'region':str, 'city':str]
+```
 
 ### Meaning ###
 
@@ -99,10 +108,12 @@ Otherwise you should write it with classes:
 
 Previous example with geo ids and names can be rewritten to one of the following forms:
 
-`['country'=id, 'region'=id, 'city'=id]`
-`['country':int=id, 'region':int=id, 'city':int=id]`
-`['country'=name, 'region'=name, 'city'=name]`
-`['country':str=name, 'region':str=name, 'city':str=name]`
+```
+['country'=id, 'region'=id, 'city'=id]
+['country':int=id, 'region':int=id, 'city':int=id]
+['country'=name, 'region'=name, 'city'=name]
+['country':str=name, 'region':str=name, 'city':str=name]
+```
 
 ### Repetition ###
 
@@ -129,5 +140,7 @@ Multiline notation
 
 @return supports multiline notation, so you can write PADN in several lines, breaking it after commas.
 
-`@return array ['id':int, 'weight':flt, 'name', 'privilegy':str, 
-    'items':[['id':int, 'weight':flt, 'name'], ...]]`
+```
+@return array ['id':int, 'weight':flt, 'name', 'privilegy':str, 
+    'items':[['id':int, 'weight':flt, 'name'], ...]]
+```
