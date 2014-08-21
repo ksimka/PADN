@@ -1,6 +1,10 @@
 PHP array doc notation (PADN)
 ===================================
 
+### Current state ###
+
+PADN is in beta. Current version is `0.8`. Terminilogy can be changed.
+
 Purpose
 -------
 
