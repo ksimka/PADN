@@ -42,6 +42,10 @@ public function findByGeoIds(array $ids) {
 }
 ```
 
+Here is an example of annotated code from Yii2
+- this is original version without PADN — https://github.com/yiisoft/yii2/blob/a2c483fc19a0d46dcefd5e97293cde55ee552ecf/framework/console/Markdown.php
+- this is with PADN comments — https://gist.github.com/ksimka/9a40d2bbb4f566a5ff5e
+
 [PADN v0.8 — see full specification in wiki](https://github.com/ksimka/PADN/wiki)
 ---------------------------------------------------------------------------------
 
