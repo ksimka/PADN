@@ -1,0 +1,28 @@
+{
+    "name": "ksimka/PADN",
+    "description": "PHP array doc notation (PADN)",
+    "version": "0.8.0",
+    "keywords": [
+        "php",
+        "array",
+        "phpdoc",
+        "documentation",
+        "notation"
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ksimka",
+            "email": "m.kochkin@wamba.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Padn\\": "src/"
+        }
+    }
+}
