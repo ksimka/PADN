@@ -48,6 +48,8 @@ public function findByGeoIds(array $ids) {
 PADN parser
 -----------
 
+[![Build Status](https://travis-ci.org/ksimka/PADN.svg?branch=master)](https://travis-ci.org/ksimka/PADN) 
+
 Source code contains a parser for PADN which parses a PADN-formatted string to an array. See examples in [tests](https://github.com/ksimka/PADN/blob/master/tests/src/PadnParserTest.php).
 
 PADN validator (TODO)
